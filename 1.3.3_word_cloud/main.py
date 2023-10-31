@@ -36,7 +36,7 @@ outputs.close()
 inputs.close()
 
 
-mask_img = np.array(Image.open("resource/mask.jpg"))  # 打开背景图片
+mask_img = np.array(Image.open("resource/test.png"))  # 打开背景图片
 inputs = open('output.txt', 'r', encoding='utf-8')    # 分词结果
 mytext = inputs.read()
 wordcloud = WordCloud(background_color="white", max_words=500, width=2000, height=1600, margin=2,

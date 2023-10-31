@@ -6,7 +6,7 @@ import jieba
 
 def word_segment():
     #strs = "我来到北京清华大学"
-    strs = "我来到杭州中国计量大学"
+    strs = "我是中国计量大学学生，我在杭州读书"
     seg_list = jieba.cut(strs, cut_all=True)
     print("Full Mode: " + "/ ".join(seg_list))  # 全模式
     seg_list = jieba.cut(strs, cut_all=False)
